@@ -1,0 +1,34 @@
+@bg :red;
+@h: 200px;
+@w: 200px;
+  
+.f(){
+   background-color: @bg;
+   font-size: 20px;
+   color: #fff;
+}
+
+
+
+.bs {
+    width :@w;      //1.变量
+   height :@h;
+//    background-color:@bg;
+    .f()
+}
+
+.box1 {
+    width :@w/2;    //2.运算
+    height :@h*2;
+    // background-color:@bg;
+    .f()
+}
+
+.box {
+ .f()             //3.可以把想通的样式放在一个函数中
+                  //用的时候调用就行了,也可以传参数
+                  //这个实用
+}
+
+
+//4.注意点:   记得每次设置完 都是重新去编译一次  lessc style.less style.css 才能生效;
