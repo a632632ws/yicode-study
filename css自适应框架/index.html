@@ -1,162 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-        }
-
-        header {
-            width: 100%;
-            height: 50px;
-            background-color: #000;
-        }
-
-        .w {
-            width: 80%;
-            height: 100%;
-
-            margin: 0 auto;
-        }
-
-        header .header-l {
-            width: 20%;
-            height: 100%;
-            background-color: red;
-            float: left;
-        }
-
-        header .header-r {
-            width: 20%;
-            height: 100%;
-            background-color: blue;
-            float: right;
-        }
-
-        .main {
-            margin-top: 30px;
-
-        }
-
-        .main ul {
-            height: 900px;
-            display: flex;
-            justify-content: space-between;
-            align-content: space-between;
-            flex-wrap: wrap;
-
-
-        }
-
-        .main ul li {
-            width: 21%;
-            height: 200px;
-            background-color: red;
-
-
-        }
-
-        footer {
-            margin-top: 50px;
-            width: 100%;
-            height: 50px;
-            background-color: yellow;
-
-        }
-
-        @media only screen and (max-width: 768px) {
-            .main ul {
-                height: 2000px;
-                display: flex;
-                justify-content: center;
-                align-content: space-between;
-                flex-wrap: wrap;
-
-
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+            header {
+                width: 100%;
+                height: 50px;
+                background-color: #000;
             }
 
-            .main ul li {
-                width: 60%;
-                height: 150px;
+            .w {
+                width: 80%;
+                height: 100%;
+
+                margin: 0 auto;
+            }
+
+            header .header-l {
+                width: 20%;
+                height: 100%;
                 background-color: red;
-
+                float: left;
             }
-        }
 
-        @media only screen and (min-width: 768px) {
+            header .header-r {
+                width: 20%;
+                height: 100%;
+                background-color: blue;
+                float: right;
+            }
+
+            .main {
+                margin-top: 30px;
+            }
+
             .main ul {
-                height: 700px;
+                height: 900px;
                 display: flex;
                 justify-content: space-between;
                 align-content: space-between;
                 flex-wrap: wrap;
-
-
-            }
-
-            .main ul li {
-                width: 30%;
-                height: 100px;
-                background-color: red;
-
-            }
-        }
-        @media only screen and (min-width: 992px) {
-            .main ul {
-                height: 600px;
-                display: flex;
-                justify-content: space-between;
-                align-content: space-between;
-                flex-wrap: wrap;
-
-
             }
 
             .main ul li {
                 width: 21%;
-                height: 100px;
+                height: 200px;
                 background-color: red;
-
             }
-        }
-    </style>
-</head>
 
-<body>
-    <header>
-        <div class="w">
-            <div class="header-l"></div>
+            footer {
+                margin-top: 50px;
+                width: 100%;
+                height: 50px;
+                background-color: yellow;
+            }
 
-            <div class="header-r"></div>
+            @media only screen and (max-width: 768px) {
+                .main ul {
+                    height: 2000px;
+                    display: flex;
+                    justify-content: center;
+                    align-content: space-between;
+                    flex-wrap: wrap;
+                }
+
+                .main ul li {
+                    width: 60%;
+                    height: 150px;
+                    background-color: red;
+                }
+            }
+
+            @media only screen and (min-width: 768px) {
+                .main ul {
+                    height: 700px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-content: space-between;
+                    flex-wrap: wrap;
+                }
+
+                .main ul li {
+                    width: 30%;
+                    height: 100px;
+                    background-color: red;
+                }
+            }
+
+            @media only screen and (min-width: 992px) {
+                .main ul {
+                    height: 600px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-content: space-between;
+                    flex-wrap: wrap;
+                }
+
+                .main ul li {
+                    width: 21%;
+                    height: 100px;
+                    background-color: red;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="w">
+                <div class="header-l"></div>
+
+                <div class="header-r"></div>
+            </div>
+        </header>
+        <div class="main">
+            <ul class="w">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </div>
-    </header>
-    <div class="main">
-        <ul class="w">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-
-        </ul>
-    </div>
-    <footer>
-        <div class="w"></div>
-    </footer>
-</body>
-
+        <footer>
+            <div class="w"></div>
+        </footer>
+    </body>
 </html>

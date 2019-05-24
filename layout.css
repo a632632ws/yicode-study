@@ -1,0 +1,228 @@
+/* *********************************
+ * chensuiyi
+ * 2019-05-25
+ * 定义此栅格系统名称开头为 (x)
+ * x 栅格系统
+ ********************************* */
+
+/* 定义一行 */
+.x-row {
+    /* 定义为块元素，这样span也可以作为行容器 */
+    display: block;
+    /* 一行占据100%宽度 */
+    width: 100%;
+}
+/* 消除行容器的浮动 */
+.x-row::after {
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+/* 定义列列元素通用属性 */
+.x-col {
+    /* 默认左浮动 */
+    float: left;
+    /* 默认占据100%宽度 */
+    width: 100%;
+}
+
+/*
+ * 定义自适应断点
+ * 将宽度分成12份
+ * 每一份宽度占8.33%
+ * 这里只分为4个断点等级
+ * xs < 768px 手机
+ * sm < 960px 平板
+ * md < 1200px 电脑
+ * lg > 1200px 大屏幕
+ */
+
+/*
+ * 占比说明
+ * 1 == 8.33%
+ * 2 == 16.66%
+ * 3 == 24.99%
+ * 4 == 33.33%
+ * 5 == 41.66%
+ * 6 == 49.99%
+ * 7 == 58.33%
+ * 8 == 66.66%
+ * 9 == 74.55%
+ * 10 == 83%
+ * 11 == 91.66%
+ * 12 == 100%
+ */
+
+/*
+ * 先查询大屏幕
+ * 再查询电脑屏幕
+ * 再查询平板屏幕
+ * 最后查询手机屏幕
+ * 因为手机屏幕也满足以上三者屏幕
+ * 比如宽度是 500px
+ * 满足 不大于960px的平板
+ * 满足 不大于1200px的电脑
+ * 那么，如果手机最先查询，就会被后面的覆盖
+ * 所以，最先查询大屏幕，小屏幕的值，会覆盖大屏幕
+ */
+
+/* 大型屏幕下 */
+@media screen and (min-width: 1200px) {
+    .x-col-lg-1 {
+        width: 8.33%;
+    }
+    .x-col-lg-2 {
+        width: 16.66%;
+    }
+    .x-col-lg-3 {
+        width: 24.99%;
+    }
+    .x-col-lg-4 {
+        width: 33.33%;
+    }
+    .x-col-lg-5 {
+        width: 41.66%;
+    }
+    .x-col-lg-6 {
+        width: 49.99%;
+    }
+    .x-col-lg-7 {
+        width: 58.33%;
+    }
+    .x-col-lg-8 {
+        width: 66.66%;
+    }
+    .x-col-lg-9 {
+        width: 74.55%;
+    }
+    .x-col-lg-10 {
+        width: 83%;
+    }
+    .x-col-lg-11 {
+        width: 91.66%;
+    }
+    .x-col-lg-12 {
+        width: 100%;
+    }
+}
+
+/* 电脑屏幕下 */
+@media screen and (max-width: 1200px) {
+    .x-col-md-1 {
+        width: 8.33%;
+    }
+    .x-col-md-2 {
+        width: 16.66%;
+    }
+    .x-col-md-3 {
+        width: 24.99%;
+    }
+    .x-col-md-4 {
+        width: 33.33%;
+    }
+    .x-col-md-5 {
+        width: 41.66%;
+    }
+    .x-col-md-6 {
+        width: 49.99%;
+    }
+    .x-col-md-7 {
+        width: 58.33%;
+    }
+    .x-col-md-8 {
+        width: 66.66%;
+    }
+    .x-col-md-9 {
+        width: 74.55%;
+    }
+    .x-col-md-10 {
+        width: 83%;
+    }
+    .x-col-md-11 {
+        width: 91.66%;
+    }
+    .x-col-md-12 {
+        width: 100%;
+    }
+}
+
+/* 平板屏幕下 */
+@media screen and (max-width: 960px) {
+    .x-col-sm-1 {
+        width: 8.33%;
+    }
+    .x-col-sm-2 {
+        width: 16.66%;
+    }
+    .x-col-sm-3 {
+        width: 24.99%;
+    }
+    .x-col-sm-4 {
+        width: 33.33%;
+    }
+    .x-col-sm-5 {
+        width: 41.66%;
+    }
+    .x-col-sm-6 {
+        width: 49.99%;
+    }
+    .x-col-sm-7 {
+        width: 58.33%;
+    }
+    .x-col-sm-8 {
+        width: 66.66%;
+    }
+    .x-col-sm-9 {
+        width: 74.55%;
+    }
+    .x-col-sm-10 {
+        width: 83%;
+    }
+    .x-col-sm-11 {
+        width: 91.66%;
+    }
+    .x-col-sm-12 {
+        width: 100%;
+    }
+}
+/* 手机屏幕下 */
+@media screen and (max-width: 768px) {
+    .x-col-xs-1 {
+        width: 8.33%;
+    }
+    .x-col-xs-2 {
+        width: 16.66%;
+    }
+    .x-col-xs-3 {
+        width: 24.99%;
+    }
+    .x-col-xs-4 {
+        width: 33.33%;
+    }
+    .x-col-xs-5 {
+        width: 41.66%;
+    }
+    .x-col-xs-6 {
+        width: 49.99%;
+    }
+    .x-col-xs-7 {
+        width: 58.33%;
+    }
+    .x-col-xs-8 {
+        width: 66.66%;
+    }
+    .x-col-xs-9 {
+        width: 74.55%;
+    }
+    .x-col-xs-10 {
+        width: 83%;
+    }
+    .x-col-xs-11 {
+        width: 91.66%;
+    }
+    .x-col-xs-12 {
+        width: 100%;
+    }
+}
