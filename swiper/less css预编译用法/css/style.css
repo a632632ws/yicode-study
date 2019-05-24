@@ -1,0 +1,19 @@
+.bs {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  font-size: 20px;
+  color: #fff;
+}
+.box1 {
+  width: 100px;
+  height: 400px;
+  background-color: red;
+  font-size: 20px;
+  color: #fff;
+}
+.box {
+  background-color: red;
+  font-size: 20px;
+  color: #fff;
+}

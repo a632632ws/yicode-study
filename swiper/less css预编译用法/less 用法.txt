@@ -1,0 +1,20 @@
+1.概念  就是css 语法的延伸 (可以加变量,函数,运算等)
+
+
+2.用法 先建了个xx.less 文件 写你需要的,然后编译成xx.css 电脑才能读取 
+
+3.下载node 执行npm install -g less 下载个全局的less 
+
+4.然后到指定的文件夹中 打开 用git(dos)打开 输入 lessc xx.less style.css 就行了  lessc(编译的意思)
+
+
+5. lessc -x xx.less style.css  加个-x 编程成压缩文件类型(一行展示).
+
+
+6.less 的一些 方法:   变量 @变量:值   
+                     运算  + - * / 
+                     
+		自定义函数  .fn(){
+				font-size : 20px;
+                           }
+			把fn()带到需要的地方 也可以                      传参

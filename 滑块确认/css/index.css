@@ -1,0 +1,42 @@
+
+form {
+    width: 300px;
+    margin: 100px auto;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+    
+   
+}
+.box {
+    width: 162px;
+    height: 10px;
+    border: 1px solid  #000;
+    /* margin-left: 36px; */
+    display: inline-block;
+    position: relative;
+  
+    
+}
+p span {
+    background-color: red;
+    font-size: 10px;
+    
+}
+
+.box .bg {
+    width:0%;    
+    height: 100%;
+    background-color:green;
+}
+.box .golo {
+    height: 100%;
+    width: 10px;
+    background-color: #ccc;
+    position: absolute;
+    left: 0;
+    top: 0;
+   
+}
+input[type=submit]{
+    margin-top: 20px;
+    margin-left: 90px;
+}
